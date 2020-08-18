@@ -1,0 +1,7 @@
+# dappx/admin.py
+from django.contrib import admin
+from .models import UserProfileInfo, User
+# Register your models here.
+admin.site.unregister(User)
+admin.site.register(UserProfileInfo)
+
